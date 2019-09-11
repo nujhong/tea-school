@@ -8,7 +8,8 @@
     "build": "npx tsc",
     "test": "npx ts-mocha ./src/__tests__/**.test.ts --timeout 5000",
     "example": "npx ts-node examples/basic-usage/index.ts",
-    "example:invoice": "npx ts-node examples/invoice/index.ts"
+    "example:invoice": "npx ts-node examples/invoice/index.ts",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,7 @@
     "@types/mocha": "^5.2.5",
     "@types/node-sass": "^3.10.32",
     "@types/pug": "^2.0.4",
-    "@types/puppeteer": "^1.12.4",
+    "@types/puppeteer-core": "^1.9.0",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "ts-mocha": "^2.0.0",
@@ -39,8 +40,9 @@
     "typescript": "^2.9.2"
   },
   "dependencies": {
+    "chrome-aws-lambda": "^1.19.0",
     "node-sass": "^4.9.2",
     "pug": "^2.0.3",
-    "puppeteer": "^1.18.1"
+    "puppeteer-core": "^1.19.0"
   }
 }
